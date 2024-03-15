@@ -22,6 +22,16 @@ def home():
     return render_template('base.html', menu_items=MENU_ITEMS, title='Base')
 
 
+@app.route("/sign_up")
+def sign_up():
+    return render_template('sign_up.html', title='Signing up')
+
+
+@app.route("/confirm_code")
+def confirm_code():
+    return render_template('confirmcode.html', title='Confirmation')
+
+
 @app.route('/login')
 def login():
     return render_template('login.html', title='Login')
@@ -32,14 +42,14 @@ def feed():
     return render_template('feed.html', menu_items=MENU_ITEMS, title='Feed')
 
 
+@app.route("/profile")
+def profile():
+    return render_template('profile.html', menu_items=MENU_ITEMS, title='Profile')
+
+
 @app.route("/search")
 def search():
     return render_template('search.html', menu_items=MENU_ITEMS, title='Search')
-
-
-@app.route("/confirm_code")
-def confirm_code():
-    return render_template('confirmcode.html', title='Confirmation')
 
 
 @app.route("/myprofile")
@@ -50,16 +60,6 @@ def myprofile():
 @app.route("/edit_post")
 def edit_post():
     return render_template('edit_post.html', menu_items=MENU_ITEMS, title='Editing')
-
-
-@app.route("/sign_up")
-def sign_up():
-    return render_template('sign_up.html', title='Signing up')
-
-
-@app.route("/profile")
-def profile():
-    return render_template('profile.html', menu_items=MENU_ITEMS, title='Profile')
 
 
 if __name__ == "__main__":
