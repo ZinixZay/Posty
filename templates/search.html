@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+    <main>
+        <div class="content-wrapper">
+            <div class="basic-heading">
+                <h1>Users search</h1>
+                <span>Here you can find users to follow</span>
+            </div>
+            <form class="search-form">
+                <input placeholder="Search" class="basic-input" type="text" id="search"/>
+                <button class="basic-button">Search<img width="16" height="16" src="https://img.icons8.com/ios-filled/50/FFFFFF/search--v2.png"/></button>
+            </form>
+            <div class="content-list">
+                <a class="user-card" href="ссылка на юзера">
+                    <div class="username">
+                        <img width="24" height="24" src="https://img.icons8.com/ios-glyphs/24/1A1A1A/user--v1.png"/>
+                        <span>Username</span>
+                    </div>
+                </a>
+                <a class="user-card" href="ссылка на юзера">
+                    <div class="username">
+                        <img width="24" height="24" src="https://img.icons8.com/ios-glyphs/24/1A1A1A/user--v1.png"/>
+                        <span>Username</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>2024 Сам сюда чето напишешь. Icons by <a href="https://icons8.ru">Icons8</a></p>
+        </div>
+    </footer>
+{% endblock content %}

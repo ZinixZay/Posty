@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% block content %}
+    <main>
+        <div class="content-wrapper">
+            <div class="basic-heading">
+                <h1>Hello, Username</h1>
+                <span>This is your profile page</span>
+            </div>
+            <div class="content-list">
+                <div class="profile-section">
+                    <div>
+                        <span>Login: </span>
+                        <span id="login">loginexample</span>
+                    </div>
+                    <button class="basic-button">Change</button>
+                </div>
+                <div class="profile-section">
+                    <div>
+                        <span>Password: </span>
+                        <span id="password">********</span>
+                    </div>
+                    <button class="basic-button">Change</button>
+                </div>
+                <div class="profile-section">
+                    <div>
+                        <span>Email: </span>
+                        <span>example@email.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="basic-heading">
+                <h2>Your posts</h2>
+            </div>
+            <div class="content-list">
+                <div class="post">
+                    <div class="post-heading">
+                        <div class="username">
+                            <img width="24" height="24" src="https://img.icons8.com/ios-glyphs/24/1A1A1A/user--v1.png"/>
+                            <a href="ссылка на юзера автора поста">Username</a>
+                        </div>
+                        <div class="icon-button-wrapper">
+                            <button class="icon-button"><img width="16" height="16" src="https://img.icons8.com/material/24/FFFFFF/edit--v1.png"></button>
+                            <button class="icon-button" style="background-color: red;"><img width="16" height="16" src="https://img.icons8.com/material-sharp/24/FFFFFF/trash.png"></button>
+                        </div>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit
+                        amet consectetur adipisicing
+                        elit. Labore ipsa, debitis
+                        nobis voluptate provident
+                        repudiandae ab rem perferendis
+                        nisi neque qui aliquam, minima
+                        deleniti officiis odit eligendi
+                        consequuntur voluptatem quos.
+                    </p>
+                    <img class="post-img" src="dog1.jpeg">
+                    <div class="post-misc">
+                        
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-heading">
+                        <div class="username">
+                            <img width="24" height="24" src="https://img.icons8.com/ios-glyphs/24/1A1A1A/user--v1.png"/>
+                            <a href="ссылка на юзера автора поста">Username</a>
+                        </div>
+                        <div class="icon-button-wrapper">
+                            <button class="icon-button"><img width="16" height="16" src="https://img.icons8.com/material/24/FFFFFF/edit--v1.png"></button>
+                            <button class="icon-button" style="background-color: red;"><img width="16" height="16" src="https://img.icons8.com/material-sharp/24/FFFFFF/trash.png"></button>
+                        </div>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit
+                        amet consectetur adipisicing
+                        elit. Labore ipsa, debitis
+                        nobis voluptate provident
+                        repudiandae ab rem perferendis
+                        nisi neque qui aliquam, minima
+                        deleniti officiis odit eligendi
+                        consequuntur voluptatem quos.
+                    </p>
+                    <img class="post-img" src="dog1.jpeg">
+                    <div class="post-misc">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>2024 Сам сюда чето напишешь. Icons by <a href="https://icons8.ru">Icons8</a></p>
+        </div>
+    </footer>
+{% endblock content %}

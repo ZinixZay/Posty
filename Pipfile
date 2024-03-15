@@ -7,6 +7,7 @@ name = "pypi"
 flask = "*"
 setuptools = "*"
 python-dotenv = "*"
+jinja2 = "*"
 
 [dev-packages]
 

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+    <main>
+        <form class="basic-form">
+            <h2>Confirm code</h2>
+            <p>We've sent a confirmation code to your e-mail address.</p>
+            <div class="form-input-fields">
+                <input placeholder="Code" class="basic-input" type="text" id="confirmation-code" required/>
+            </div>
+            <button type="submit" class="basic-button" style="width: 100%" formaction="сабмит формы">Send</button>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>2024 Сам сюда чето напишешь</p>
+        </div>
+    </footer>
+{% endblock content %}

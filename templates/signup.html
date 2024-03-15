@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+    <main>
+        <form class="basic-form">
+            <h2>Sign up</h2>
+            <div class="form-input-fields">
+                <input placeholder="Name" class="basic-input" type="text" id="name" required/>
+                <input placeholder="Surname" class="basic-input" type="text" id="surname" required/>
+                <div class="birth-date-input-wrapper">
+                    <label>Birth date:</label>
+                    <input placeholder="Datetime" class="basic-input" style="flex: none; width: auto" type="date" id="birthdate" required/>
+                </div>
+                <input placeholder="E-mail" class="basic-input" type="email" id="email" required/>
+                <input placeholder="Password" class="basic-input" type="password" id="password" required/>
+                <input placeholder="Confirm password" class="basic-input" type="password" id="password" required/>
+            </div>
+            <button type="submit" class="basic-button" style="width: 100%" formaction="сабмит формы">Sign up</button>
+            <p class="alter-form-ref">Already have an account? <a href="твоя ссылка на стр логина">Login</a></p>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>2024 Сам сюда чето напишешь</p>
+        </div>
+    </footer>
+{% endblock content %}

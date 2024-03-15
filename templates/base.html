@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>{{ title }}</title>
+</head>
+<body>
+{% block header %}
+  <header class="header">
+        <div class="header-content">
+            <h2>Posty</h2>
+            <div class="header-nav">
+                {% for menu_item in menu_items %}
+                    <a class="nav-element" href={{ menu_item.url }}>{{ menu_item.label }}</a>
+                {% endfor %}
+                <div class="username">
+                    <a href="myprofile">Username</a>
+                    <img width="24" height="24" src="https://img.icons8.com/ios-glyphs/24/FFFFFF/user--v1.png"/>
+                </div>
+            </div>
+        </div>
+    </header>
+{% endblock header %}
+{% block content %}
+{% endblock content %}
+</body>
+</html>
